@@ -3,9 +3,13 @@
   </head>
 
   <body>
-    <form action="???" data-turbo="false">
-      <input type="text" name="???">
-      <input type="submit" value="Ask!">
-    </form>
+   <% members = ["bruh", "fam", "dawg", "damien", "julien"] %>
+
+<h2>Meet our team</h2>
+<ol>
+  <% members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
   </body>
 </html>
