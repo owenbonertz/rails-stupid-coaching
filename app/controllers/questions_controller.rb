@@ -3,6 +3,14 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    @answer = "bruh"
+    @question = params[:question]
+    @response = ""
+    if @question == "I am going to work"
+      @response = "Great!"
+    elsif @question[-1] == "?"
+      @response = "Silly question, get to work"
+    else
+      @response = "I don't care, get dressed and go to work!"
+    end
   end
 end

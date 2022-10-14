@@ -1,15 +1,10 @@
-<html>
-  <head>
-  </head>
 
-  <body>
-   <% members = ["bruh", "fam", "dawg", "damien", "julien"] %>
+<body>
 
-<h2>Meet our team</h2>
-<ol>
-  <% members.each do |member| %>
-    <li><%= member.capitalize %></li>
-  <% end %>
-</ol>
-  </body>
-</html>
+<h1><%=@question%></h1>
+<h2>-You</h2>
+<h1><%=@response%> </h1>
+<h2> -Your Coach </h2>
+<%= link_to "ask another question", ask_path %>
+
+</body>
